@@ -1,0 +1,26 @@
+%main
+  %section.bgimage.text-end
+    .container
+      .row
+        .col
+        .col
+          #logo-box
+            =image_tag "pmpc-logo-block-outline-wht.png", class: "logo img-fluid"
+            %h1 Open-source Proposal 2021
+
+  .pages
+    %section.page.container-fluid.shadow
+      .container
+        .row.py-5.justify-content-center
+          .col
+            = render 'executive_summary'
+    %section.page.container-fluid.shadow
+      .container
+        .row.py-5
+          .col
+            = render 'table_of_contents'
+    %section.page.container-fluid.shadow
+      .container
+        .row.py-5
+          .col
+            = render 'context'
