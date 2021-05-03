@@ -54,5 +54,18 @@ $headings-font-family: 'Quicksand';
         @include make-col(4);
       }
     }
+    .page-col2 {
+      @include make-col-ready();
+
+      @include media-breakpoint-up(xs) {
+        @include make-col(12);
+      }
+      @include media-breakpoint-up(lg) {
+        @include make-col(8);
+      }
+      @include media-breakpoint-up(xl) {
+        @include make-col(6);
+      }
+    }
   }
 }
