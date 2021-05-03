@@ -1,0 +1,38 @@
+.row.justify-content-center
+  .page-header-col
+    %h1.fw-bold For development and migration
+  .col-xs-12.col-lg-8.col-xl-6
+    %h3 Staff Master Index
+    %p The execution essential: “User led: Build The One Thing” states that we should:
+    %p “focus on a clear and unambiguously recognised problem for users”
+    %p An accurate database of the relations between staff is a common and persistent problem across the NHS. There is evidenced in the following places:
+    %ul
+      %li Trusts interested in, or implementing, the ESR Wrapper API have been using it to create a Staff Master Index. Those trusts are
+      %ul
+        %li UCLH
+        %li Oxleas NHS FT
+        %li Torbay and South Devon NHS FT
+        %li Birmingham Community
+      %li The lack of a core staff reference point is a common problem at The Supplier Reference Group meetings of NHSI’s Workforce Deployment System Project.
+      %li SARD’s experience over the last 10 years has found that trusts regularly restructure their organisational data. Often this is a redefining of the hierarchy of a tree structure rather than a fundamental change in the data itself. To give a recent example, Manchester Foundation Trust have swapped Hospitals and recently restructured all their organisational groups. We are in the process of organising this for them on SARD, making sure our system reflects their new organisational structure.
+    %p At UCLH, the Staff Master Index (SMI) is designed to tackle the problem that they cannot reliably identify the same member of staff on different IT systems. This makes it very time consuming to pass important information between the systems, for example when managing new members of staff, managing the exit process for staff, or simply trying to keep a person’s details accurate.  The Staff Master Index becomes the master list for all people who provide services at UCLH in a non-patient, non-carer capacity.
+    %p.fw-bold For each system that subscribes to the SMI a list of the following is generated:
+    %ul
+      %li new members of staff that need to be added to their system;
+      %li staff records where information is not consistent with more trusted systems.
+
+    %p UCLH are currently exploring how they can automatically generate default requirements for new UCLH starters for information such as Epic access, Epic training and mandatory training. This is dependent upon a fully functioning Staff Master Index.
+  .col-xs-12.col-lg-8.col-xl-6
+    %p.fw-bold So far UCLH have:
+    %ul
+      %li Built, imported and automated matching routines that cover the following systems: ESR; Active Directory; Epic (user details); E-roster; Bank; C-CURE (door security system).
+      %li Carried out manual matches on around 3000 records where an automated match couldn’t safely be made.
+      %li Placed 23,000 unique records on the SMI where the record is on more than one system.
+      %li Proposed the preferred systems for each data item when populating the SMI. ESR is the principal source of information wherever it holds a record for a person.
+
+    %p.fw-bold Key next steps for UCLH:
+    %ul
+      %li Establish daily or weekly updates to the SMI from the participating systems. Aiming for this to be in place for ESR and Active Directory in early November.
+      %li Investigate the processes and data quality for the participating systems. The outputs from the matching routines (see appendix A) show that we need to do more to understand the data and processes in each participating system.
+    %p Similar projects exist within at least four more hospitals known to SARD JV. Andy Sandford from We Are Lean and Agile -  a business process improvement company - has noticed a similar need for organisational discovery tools in local government.
+    %p The company seeks to bring together the best of these projects into an open-source application. Accurate and reliable staff data is a key challenge facing public sector organisations across the globe. This project will alleviate that issue.

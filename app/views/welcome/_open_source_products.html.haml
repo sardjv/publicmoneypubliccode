@@ -1,0 +1,29 @@
+.row.justify-content-center
+  .page-header-col
+    %h1.fw-bold Appendix 1: Open-source products
+  .col-xs-12.col-lg-8.col-xl-6
+    %h3 Existing
+    %p In 2020, there were two open-source products developed by SARD in partnership with Oxleas NHS FT and funded by NHS Improvement:
+    %ul
+      %li ESR Wrapper API - an application to parse and wrap the nightly ESR CSV data from an FTP server and represent it in a modern Open API Specification aka. Swagger. This product has already been adopted by UCLH, and Torbay and South Devon, who both independently contacted SARD requiring its use in a Staff Master Index project.
+      %li Murfin+ - an application that allows a trust to review the current job plans and compare that to the reality of direct clinical care. The core aim is to allow service managers to understand pressure points either for recruitment or redeployment of resources.
+
+    %p They are currently housed and maintained by SARD in their Github repositories and released under an MIT licence. The company should house these assets because they:
+    %ul
+      %li become Independent of SARD
+      %li are natural ancillary products to eRostering and the Staff Master Index
+      %li Make it easier for non-SARD clients and her competitors to contribute
+    %h3 ESR Wrapper API
+    %p SARD ESR Wrapper API is an open-source product developed by SARD in partnership with Oxleas NHS FT and funded by NHS England and NHS Improvement.
+    %p Electronic Staff Record (ESR) is an incredibly important part of the NHS and holds details of all staff within the organisation. There has historically been much scope to improve the way data can be accessed from ESR to ensure it can be used in a useful way.
+    %p API stands for Application Programming Interface which is a way to define interactions between multiple software programmes. An easy way to think about an API is when you type into a search engine, once you hit enter, the search engine uses multiple APIs throughout the internet to find the answer - at an incredibly rapid speed.
+    %p Through the ESR Wrapper API, ESR data can be accessed through a user interface which is aesthetically pleasing and easy to use. This allows the user to find the information they require in a matter of minutes if not seconds.
+    %p Open-source means this facility is now available to everyone for free and all users can benefit. There is no access charge.
+    %ul
+      %li Access information easily and efficiently
+      %li Multi-level data security (only enable access to the data needed)
+      %li Easy-to-navigate user interface, developed with the user in mind
+      %li Community-driven and open-source project that will continue to evolve and grow
+  .col-xs-12.col-lg-8.col-xl-6
+    = image_tag 'esr-data.png', class: 'img-fluid'
+    = image_tag 'esr-api.png', class: 'img-fluid'
