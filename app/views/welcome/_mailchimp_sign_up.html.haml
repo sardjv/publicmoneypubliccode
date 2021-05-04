@@ -1,0 +1,45 @@
+/ Begin Mailchimp Signup Form
+#mc_embed_signup
+  %form#mc-embedded-subscribe-form.validate{:action => "https://publicmoneypubliccode.us1.list-manage.com/subscribe/post?u=2106f0db67345238da6a40495&id=93f04c6c8d", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+    #mc_embed_signup_scroll
+      %h3 Do you support <span class="fw-bold">Public Money, Public Code</span> in the NHS?
+      %p Then tell us about yourself and we'll be in touch...
+      .mc-field-group.mb-3
+        %label.form-label{:for => "mce-EMAIL"}
+          Email Address
+          %span.asterisk *
+        %input#mce-EMAIL.required.email.form-control{:name => "EMAIL", :type => "email", :value => ""}/
+      .row
+        .col
+          .mc-field-group.mb-3
+            %label.form-label{:for => "mce-FNAME"} First Name
+            %input#mce-FNAME.form-control{:name => "FNAME", :type => "text", :value => ""}/
+        .col
+          .mc-field-group.mb-3
+            %label.form-label{:for => "mce-LNAME"} Last Name
+            %input#mce-LNAME.form-control{:name => "LNAME", :type => "text", :value => ""}/
+      #mergeRow-gdpr.mergeRow.gdpr-mergeRow.content__gdprBlock.mc-field-group.mb-3
+        .content__gdpr
+          %label.form-label.fw-bold GDPR Permissions
+          %p Please select all the ways you would like to hear from Public Money Public Code:
+          %fieldset.mc_fieldset.gdprRequired.mc-field-group.form-check{:name => "interestgroup_field"}
+            %label.checkbox.subfield.form-check-label{:for => "gdpr_48438"}
+              %input#gdpr_48438.av-checkbox.gdpr.form-check-input{:name => "gdpr[48438]", :type => "checkbox", :value => "Y"}/
+              %span Email
+          %p You can unsubscribe at any time by clicking the link in the footer of our emails.
+        .content__gdprLegal
+          %p
+            We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing.
+            %a{:href => "https://mailchimp.com/legal/", :target => "_blank"} Learn more about Mailchimp's privacy practices here.
+      #mce-responses.clear
+        #mce-error-response.response{:style => "display:none"}
+        #mce-success-response.response{:style => "display:none"}
+      / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+      %div{"aria-hidden" => "true", :style => "position: absolute; left: -5000px;"}
+        %input{:name => "b_2106f0db67345238da6a40495_93f04c6c8d", :tabindex => "-1", :type => "text", :value => ""}/
+      .clear
+        %input#mc-embedded-subscribe.button.btn.btn-primary{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+%script{:src => "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js", :type => "text/javascript"}
+:javascript
+  (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[5]='ORGANISATI';ftypes[5]='text';fnames[6]='JOBTITLE';ftypes[6]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[8]='TWITTER';ftypes[8]='text';fnames[7]='COMMENTS';ftypes[7]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+/ End mc_embed_signup
