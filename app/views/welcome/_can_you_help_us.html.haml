@@ -1,17 +1,15 @@
 .row.justify-content-center
   .page-header-col
     %h1.fw-bold Can you help us?
-  .page-col
+  .page-col2
     %p Public Money, Public Code is a <span class="fw-bold">community</span> dedicated to improving software systems in the NHS through greater collaboration. That means YOU!
     %p It is an open community in every sense. We want <span class="fw-bold">YOU</span> to be board members, to advise, to share, to contribute code, to review the accounts, even build this proposal!
     %p Come and get involved. Be a part of The Rebel Alliance. It doesn't matter if you're a competitor to SARD JV, a software hacker, a clinician, doctor, nurse, informatician, concerned citizen. This is a team effort. And we have a warm embrace for everybody who shares our mission.
     %p NHS technology has been floundering in broken, proprietary systems for too long. Up and down the UK, there are bright, enthusiastic, talented people like you, who want to make our NHS run better. This is a focal point to make that happen.
-  .page-col
     %h3 How to support...
     %p
       The easiest starting point is to
       =link_to 'follow us on Twitter.', 'https://twitter.com/PubMoneyPubCode'
-
     %p
       %a.btn.btn-primary{href: "https://twitter.com/PubMoneyPubCode", role:"button", target:"_blank"}
         = icon("twitter")
@@ -24,4 +22,5 @@
         = icon("github")
         Suggest edits to this proposal
 
-  .page-col
+  .page-col2
+    = render 'mailchimp_sign_up'
