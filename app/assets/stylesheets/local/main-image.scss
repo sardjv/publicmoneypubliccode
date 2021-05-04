@@ -1,0 +1,37 @@
+// main-image
+
+
+.bgimage{
+  width: 100%;
+  height: 400px;
+  // background: url(/packs/media/images/front-cover-image-0c4d62d….jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  // background-attachment: fixed;
+  background-attachment: scroll;
+
+  #logo-box{
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    img{
+      max-height: 270px;
+    }
+
+    @include media-breakpoint-down(lg){
+      img{
+        max-height: 200px;
+
+      }
+    }
+    // .logo{
+    //   width: 50%;
+    //   height: 50%;
+    // }
+  }
+}
