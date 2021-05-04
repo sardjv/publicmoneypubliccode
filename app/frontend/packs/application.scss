@@ -1,71 +1,16 @@
 // inside app/frontend/packs/application.scss
 
-$headings-font-family: 'Quicksand';
+// $headings-font-family: 'Quicksand';
 // $lead-font-weight:            500;
 
-.bgimage {
-  width:100%;
-  height:500px;
-  background: url('../images/front-cover-image.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size:cover;
-  background-attachment: fixed;
-}
 
- #logo-box {
-   color: white;
-   margin-top: 32px;
-   padding-right: 32px;
-   img {max-height: 300px;}
-   h1 {margin-top: 16px;}
- }
 
 // Import Bootstrap v5
 @import "~bootstrap/scss/bootstrap";
 
-.pages {
-  background: #cccccc;
-  .page {
-    background: white;
-    margin-bottom: 32px;
-    .page-header-col {
-      @include make-col-ready();
-      @include media-breakpoint-up(xs) {
-        @include make-col(12);
-      }
-      @include media-breakpoint-up(lg) {
-        @include make-col(8);
-      }
-      @include media-breakpoint-up(xl) {
-        @include make-col(12);
-      }
-    }
-    .page-col {
-      @include make-col-ready();
 
-      @include media-breakpoint-up(xs) {
-        @include make-col(12);
-      }
-      @include media-breakpoint-up(lg) {
-        @include make-col(8);
-      }
-      @include media-breakpoint-up(xl) {
-        @include make-col(4);
-      }
-    }
-    .page-col2 {
-      @include make-col-ready();
-
-      @include media-breakpoint-up(xs) {
-        @include make-col(12);
-      }
-      @include media-breakpoint-up(lg) {
-        @include make-col(8);
-      }
-      @include media-breakpoint-up(xl) {
-        @include make-col(6);
-      }
-    }
-  }
-}
+// Local Styles -----------------------
+@import "stylesheets/local/local-variables";
+@import "stylesheets/local/typography";
+@import "stylesheets/local/header";
+@import "stylesheets/local/pages";

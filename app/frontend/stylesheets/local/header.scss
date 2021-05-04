@@ -1,0 +1,34 @@
+// Header =======================================
+
+
+.bgimage{
+  width: 100%;
+  // height: 400px;
+  height: 30vh;
+  max-height: 30vh;
+  background: url('../images/front-cover-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+
+  #logo-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 2vh;
+
+    img{
+      height: 19vh;
+      max-height: 19vh;
+    }
+
+    h1{
+      font-size: 3vh;
+      margin: 0;
+    }
+  }
+}
