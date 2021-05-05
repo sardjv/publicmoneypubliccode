@@ -1,0 +1,105 @@
+// Sidebar ======================================
+
+.sidebar {
+  display: block;
+  width: 200px;
+  height: 100%;
+  background-color:white;
+  position: fixed;
+  left: -200px;
+  z-index: 1;
+  overflow: auto;
+
+  transition: all 320ms ease-in-out!important;
+}
+
+.sidebar.open{
+  left: 0;
+  -webkit-box-shadow: 1px 0px 6px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 1px 0px 6px 0px rgba(0,0,0,0.25);
+  box-shadow: 1px 0px 6px 0px rgba(0,0,0,0.25);
+  transition: all 320ms ease-in-out!important;
+}
+
+
+// Close button -------------
+.sidebar{
+  .close-button{
+    background-color: #0d6efd;
+    color: white;
+
+    margin: 0;
+    -webkit-appearance: button;
+
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    padding: 8px 16px;
+    text-align: left;
+    white-space: normal;
+    float: none;
+    outline: 0;
+
+    display: block;
+    position: fixed;
+    width: 200px;
+  }
+}
+
+
+
+// Menu ---------------------
+.sidebar{
+  .menu{
+    margin-top: 40px;
+  }
+  a.menu-link{
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+
+    cursor: pointer;
+
+    width: 100%;
+    display: block;
+    padding: 6px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+
+    border-bottom: 1px solid #ccc;
+  }
+
+  a.menu-link:hover {
+    background-color: #f2f2f2;
+  }
+}
+
+// Hamburger ----------------
+.sidebar-hamburger{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 22px;
+
+  background-color: #0d6efd;
+  color: white;
+
+  cursor: pointer;
+}
+
+
+
