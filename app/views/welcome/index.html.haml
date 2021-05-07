@@ -24,11 +24,33 @@
               .page-header-col
                 %h1.fw-bold Graffiti Wall!
               .page-col2
+                %h3 Make a simple open-source contribution in 2 minutes!
+                %p First, don't worry! You can't break anything. We promise.
                 %p
                   You can contribute to open-source code <span class="fw-bold">right now</span>!
                   Come and write something on our Graffiti Wall and show your support for Public Money, Public Code.
                   Whatever your level of technical literacy, you can do it and <span class="fw-bold">takes 2 minutes</span>.
                 %p Once you've done it, you'll feel the immense satisfaction of contributing to this here website! Forever immortalised!
+                %ol
+                  %li Create a <a href="https://github.com/join">free account on Github</a> or <a href="https://github.com/login">login</a>
+                  %li
+                    Once logged in,
+                    = link_to 'go to this page to edit the Graffiti html', 'https://github.com/sardjv/publicmoneypubliccode/edit/main/app/views/welcome/_graffiti.html'
+                  %li This will create a fork! Don't worry about it. That's good. &#x1F44D; If it doesn't, hit the 'create fork' button
+                  %li
+                    Now you are editing the file! Duplicate the last line in the file by copy and pasting it.
+                    It should look something like this...
+                    %pre
+                      %code &lt;p&gt;&amp;#127793; The Last Name &amp;#127793;&lt;/p&gt;
+                    That's HTML code.
+                  %li Change the name in the newly pasted line to your name.
+                  %li Hit the 'Propose changes' button.
+                  %li Hit 'Create pull request'
+                  %li Hit 'Create pull request' again on the next page.
+                  %li You're done. And you've contributed to open-source!
+                %h3 What happens now
+                %p We - the maintainers of the project - will be notified by email. We'll check your "pull request" and assuming it's all OK we'll merge it into the main source code. Cogs will whurrrr. And a few minutes later, your name will be on this very website! Congratulations!!
+                %p If you're feeling brave then play around with different HTML <a href="https://www.w3schools.com/charsets/ref_emoji.asp">emojis</a>, images, videos or anything else you like. Don't worry, we'll check it before we merge it into the main website.
               .page-col2
                 %h3 Introducing our open sourcerers...
                 = render 'graffiti'
