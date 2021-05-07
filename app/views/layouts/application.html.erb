@@ -20,6 +20,7 @@
   </head>
 
   <body>
+    <%= render 'layouts/sidebar' %>
     <%= yield %>
     <a class="btn btn-primary btn-sm position-fixed bottom-0 end-0" href="https://twitter.com/PubMoneyPubCode" role="button" target="_blank">
       <%= icon("twitter") %>
@@ -42,5 +43,20 @@
       })();
     </script>
     <!-- end SnapEngage code -->
+
+    <!-- Sidebar code -->
+    <script>
+      function sidebar_open() {
+        var element = document.getElementById("pmpcSidebar");
+        element.classList.add("open");
+      }
+
+      function sidebar_close() {
+        var element = document.getElementById("pmpcSidebar");
+        element.classList.remove("open");
+      }
+    </script>
+    <!-- end Sidebar code -->
+
   </body>
 </html>
