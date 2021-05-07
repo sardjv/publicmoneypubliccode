@@ -17,6 +17,22 @@
           .col
             = render 'can_you_help_us'
     %section.page.container-fluid.shadow
+      #graffiti.container
+        .row.py-5.justify-content-center
+          .col
+            .row.justify-content-center
+              .page-header-col
+                %h1.fw-bold Graffiti Wall!
+              .page-col2
+                %p
+                  You can contribute to open-source code <span class="fw-bold">right now</span>!
+                  Come and write something on our Graffiti Wall and show your support for Public Money, Public Code.
+                  Whatever your level of technical literacy, you can do it and <span class="fw-bold">takes 2 minutes</span>.
+                %p Once you've done it, you'll feel the immense satisfaction of contributing to this here website! Forever immortalised!
+              .page-col2
+                %h3 Introducing our open sourcerers...
+                = render 'graffiti'
+    %section.page.container-fluid.shadow
       #executive_summary.container
         .row.py-5.justify-content-center
           .col
